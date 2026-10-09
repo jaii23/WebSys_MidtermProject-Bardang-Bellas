@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --dark-red: #9d174d;
+    --pink: #ec4899;
+    --light-pink: #fff1f7;
+    --white: #ffffff;
+    --shadow: 0 10px 25px rgba(157, 23, 77, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ffe4f0, #fda4af, #e11d48);
+    color: #581c35;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: "♡";
+    position: fixed;
+    top: 25px;
+    left: 30px;
+    color: white;
+    font-size: 45px;
+    opacity: 0.7;
+}
+
+body::after {
+    content: "♡";
+    position: fixed;
+    right: 35px;
+    bottom: 25px;
+    color: white;
+    font-size: 55px;
+    opacity: 0.7;
+}
+
+h1 {
+    color: var(--dark-red);
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+a {
+    color: var(--dark-red);
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+a:hover {
+    color: #be123c;
+    text-decoration: underline;
+}
+
+form,
+table {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+    background: rgba(255, 255, 255, 0.92);
+    border: 2px solid #f9a8d4;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: 25px;
+}
+
+form {
+    max-width: 550px;
+}
+
+label {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--dark-red);
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #f9a8d4;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--pink);
+    box-shadow: 0 0 0 3px #fbcfe8;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    color: white;
+    background: linear-gradient(90deg, #ec4899, #be123c);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+table {
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+th {
+    padding: 14px;
+    color: white;
+    background: linear-gradient(90deg, #ec4899, #be123c);
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #fbcfe8;
+}
+
+tr:nth-child(even) {
+    background: #fff1f7;
+}
+
+tr:hover {
+    background: #fce7f3;
+}
+
+img {
+    border-radius: 12px;
+    border: 2px solid #f9a8d4;
+    object-fit: cover;
+}
